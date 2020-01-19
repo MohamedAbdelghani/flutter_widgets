@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // Horizontal Divider line with Text
-
 class HorizontalDivider extends StatelessWidget {
   final String text;
   final TextStyle textStyle;
@@ -20,21 +19,14 @@ class HorizontalDivider extends StatelessWidget {
       Expanded(
         child: Container(
             margin: EdgeInsets.only(left: 10.0, right: 15.0),
-            child: divider ??
-                Divider(
-                  color: Colors.black,
-                  height: 30,
-                )),
+            child: divider ?? Divider()),
       ),
       Text(text, style: textStyle ?? TextStyle()),
       Expanded(
         child: Container(
-            margin: EdgeInsets.only(left: 15.0, right: 10.0),
-            child: divider ??
-                Divider(
-                  color: Colors.black,
-                  height: 30,
-                )),
+          margin: EdgeInsets.only(left: 15.0, right: 10.0),
+          child: divider ?? Divider(),
+        ),
       ),
     ]);
   }
