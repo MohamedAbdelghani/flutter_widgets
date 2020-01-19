@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-// Horizontal Divider line with Text in the middle
+// Horizontal Divider line with text in the middle
 
-class HorizontalDivider extends StatelessWidget {
+class DividerWithText extends StatelessWidget {
   final String text;
   final TextStyle textStyle;
   final Divider divider;
 
-  HorizontalDivider({
+  DividerWithText({
     @required this.text,
     this.textStyle,
     this.divider,
